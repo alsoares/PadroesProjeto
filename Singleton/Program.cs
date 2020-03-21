@@ -6,7 +6,14 @@ namespace Singleton
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var ronaldo = Singleton.GetInstance;
+            var ronaldinho = Singleton.GetInstance;
+            var rivaldo = Singleton.GetInstance;
+
+            ronaldinho.Message("Ronaldinho dominou a bola..");
+            rivaldo.Message("Rivaldo recebe a bola e lança..");
+            ronaldo.Message("Ronaldo marca o gol");
+            
         }
     }
 }
